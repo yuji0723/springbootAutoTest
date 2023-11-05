@@ -1,10 +1,10 @@
 package com.jin.service.domain.impl;
 
 import com.baomidou.dynamic.datasource.annotation.DS;
-import com.jin.entity.UserEntity;
-import com.jin.mapper.UserMapper;
-import com.jin.service.domain.UserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.jin.entity.ProductEntity;
+import com.jin.mapper.ProductMapper;
+import com.jin.service.domain.ProductService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -13,10 +13,9 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author 大力pig
- * @since 2023-11-02
+ * @since 2023-11-05
  */
 @Service
-@DS("master")
-public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> implements UserService {
-
+@DS("test2")
+public class ProductServiceImpl extends ServiceImpl<ProductMapper, ProductEntity>implements ProductService {
 }

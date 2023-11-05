@@ -7,10 +7,20 @@ spring:
     name: spring-test
 #data source
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/test
-    username: root
-    password: 123456
+    dynamic:
+      primary: test
+      strict: false
+      datasource:
+        test:
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=false
+          username: root
+          password: 123456
+        test2:
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://localhost:3306/test2?characterEncoding=utf8&useSSL=false
+          username: root
+          password: 123456
 
 mybatis-plus:
   configuration:

@@ -1,5 +1,6 @@
 package com.jin.mapper;
 
+import com.baomidou.dynamic.datasource.annotation.DS;
 import com.jin.entity.UserEntity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
@@ -14,6 +15,6 @@ import org.apache.ibatis.annotations.Mapper;
  */
 
 @Mapper
+@DS("test")
 public interface UserMapper extends BaseMapper<UserEntity> {
-
 }
