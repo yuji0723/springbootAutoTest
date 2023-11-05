@@ -19,6 +19,6 @@ mybatis-plus:
 #  mybatis xml mapper location
   mapper-locations: /mapper/**/*.xml
 #  set table name prefix
-  global-config:
-    db-config:
-      table-prefix:
+#  global-config:
+#    db-config:
+#      table-prefix:
