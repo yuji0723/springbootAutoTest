@@ -1,6 +1,5 @@
 package com.jin.cases;
 
-import com.jin.entity.UserEntity;
 import com.jin.mapper.ProductMapper;
 import com.jin.mapper.UserMapper;
 import com.jin.service.domain.ProductService;
