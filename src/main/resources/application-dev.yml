@@ -1,0 +1,31 @@
+server:
+  port: 8081
+spring:
+  profiles: dev
+#data source
+  datasource:
+    dynamic:
+      primary: test
+      strict: false
+      datasource:
+        test:
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://localhost:3306/dev?characterEncoding=utf8&useSSL=false
+          username: root
+          password: 123456
+        test2:
+          driver-class-name: com.mysql.jdbc.Driver
+          url: jdbc:mysql://localhost:3306/dev2?characterEncoding=utf8&useSSL=false
+          username: root
+          password: 123456
+
+mybatis-plus:
+  configuration:
+#    sql print
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  mybatis xml mapper location
+  mapper-locations: /mapper/**/*.xml
+#  set table name prefix
+#  global-config:
+#    db-config:
+#      table-prefix:

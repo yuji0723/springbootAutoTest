@@ -36,4 +36,10 @@ public class DynamicTest {
         Assert.assertEquals("台灯", productMapper.selectById(1L).getProductName());
     }
 
+    @Test
+    public void countTest(){
+        System.out.println(userService.getById(null));
+        System.out.println(productService.getById(null));
+    }
+
 }
