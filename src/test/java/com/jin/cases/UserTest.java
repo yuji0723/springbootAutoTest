@@ -1,10 +1,10 @@
 package com.jin.cases;
 
+import com.jin.BaseTest;
 import com.jin.entity.UserEntity;
 import com.jin.mapper.UserMapper;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.Assert;
 
 import java.util.Date;
@@ -12,10 +12,8 @@ import java.util.List;
 import static org.testng.Assert.assertEquals;
 
 
-@SpringBootTest
-public class UserTest {
-
-
+public class UserTest extends BaseTest {
+    
     @Autowired
     private UserMapper userMapper;
 

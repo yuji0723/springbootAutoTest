@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="app1 Test Suite">
+<!--    todo confirm parameter use-->
+    <!--    <parameter name="browser" value="chrome"/>-->
+
+    <test name="My Dynamic Test">
+<!--        <parameter name="username" value="user1"/>-->
+<!--        <parameter name="password" value="pass123"/>-->
+        <classes>
+            <class name="com.jin.cases.DynamicTest"/>
+        </classes>
+    </test>
+
+    <test name="My User service Test">
+        <!-- Configuration for another test -->
+        <classes>
+            <class name="com.jin.cases.UserServiceTest"/>
+        </classes>
+    </test>
+</suite>

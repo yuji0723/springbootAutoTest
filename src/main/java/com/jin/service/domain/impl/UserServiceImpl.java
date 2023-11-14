@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
  * @since 2023-11-02
  */
 @Service
-@DS("master")
+@DS("test")
 public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> implements UserService {
 
 }

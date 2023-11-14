@@ -1,17 +1,16 @@
 package com.jin.cases;
 
+import com.jin.BaseTest;
 import com.jin.entity.UserEntity;
 import com.jin.service.domain.UserService;
-import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.testng.annotations.Test;
 import org.testng.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@SpringBootTest
-public class UserServiceTest {
+public class UserServiceTest extends BaseTest {
     @Autowired
     private UserService userService;
 

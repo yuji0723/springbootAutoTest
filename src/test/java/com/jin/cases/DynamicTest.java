@@ -1,16 +1,16 @@
 package com.jin.cases;
 
+import com.jin.BaseTest;
 import com.jin.mapper.ProductMapper;
 import com.jin.mapper.UserMapper;
 import com.jin.service.domain.ProductService;
 import com.jin.service.domain.UserService;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.testng.Assert;
 
-@SpringBootTest
-public class DynamicTest {
+
+public class DynamicTest extends BaseTest {
 
     @Autowired
     private ProductService productService;
