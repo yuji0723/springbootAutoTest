@@ -7,12 +7,15 @@
     <test name="My Dynamic Test">
 <!--        <parameter name="username" value="user1"/>-->
 <!--        <parameter name="password" value="pass123"/>-->
+        <parameter name="allure.testcase" value="My Dynamic Test"/>
         <classes>
             <class name="com.jin.cases.DynamicTest"/>
         </classes>
     </test>
 
     <test name="My User service Test">
+        <parameter name="allure.testcase" value="My User service Test"/>
+
         <!-- Configuration for another test -->
         <classes>
             <class name="com.jin.cases.UserServiceTest"/>
