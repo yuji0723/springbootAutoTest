@@ -17,6 +17,7 @@ public class AfterSuiteListener implements ISuiteListener {
     @Override
     public void onFinish(ISuite iSuite) {
         if (iSuite.getName().equals("Auto Report Suite")){
+            EmailHelper.generateAllureReport();
             EmailHelper.sendEmailWithAllureReport();
         }
     }
