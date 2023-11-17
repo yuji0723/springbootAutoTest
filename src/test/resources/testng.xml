@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Auto Report">
+<suite name="Auto Report Suite">
     <listeners>
+        <!--        allure testng集成-->
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <!--        testng监听器对于套件检测-->
+        <listener class-name="com.jin.listeners.AfterSuiteListener"/>
+
     </listeners>
-<suite-files>
-    <suite-file path="testng-app1.xml"/>
-    <suite-file path="testng-app2.xml"/>
-</suite-files>
+    <suite-files>
+        <suite-file path="testng-app1.xml"/>
+        <suite-file path="testng-app2.xml"/>
+    </suite-files>
 </suite>
