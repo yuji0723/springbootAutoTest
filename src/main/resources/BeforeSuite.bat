@@ -4,7 +4,7 @@ echo Deleting contents of the target directory...
 REM 输出消息给用户
 echo This script is deleting contents of the target directory.
 
-REM 切换到项目根目录
+REM 切换到该文件往上的根目录\..文件级别
 cd /d "%~dp0\..\..\.."
 
 REM 检查 target 目录是否存在
@@ -22,5 +22,5 @@ if exist "target/" (
 REM 输出消息给你
 echo before suite execution completed.
 
-REM 不需要按任意键去结束
+REM 不需要按任意键去结束, 原有实现方法 pause
 exit /b
