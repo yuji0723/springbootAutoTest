@@ -14,8 +14,11 @@
         <maven.compiler.compilerVersion>8</maven.compiler.compilerVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <swagger.version>2.9.2</swagger.version>
+        <lombok.version>1.18.28</lombok.version>
         <mybatisGenerator.version>3.1.1</mybatisGenerator.version>
         <mybatisPlus.version>3.0.5</mybatisPlus.version>
+        <rest-assured.version>4.3.3</rest-assured.version>
+        <mysql.version>5.1.40</mysql.version>
     </properties>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -102,18 +105,15 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.28</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.40</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.9.6</version>
-            <scope>test</scope>
             <exclusions>
                 <exclusion>
                     <artifactId>guava</artifactId>
@@ -137,11 +137,25 @@
             <artifactId>javax.mail</artifactId>
             <version>1.6.2</version>
         </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+        </dependency>
 
 
     </dependencies>
-
-
     <build>
         <plugins>
             <plugin>
